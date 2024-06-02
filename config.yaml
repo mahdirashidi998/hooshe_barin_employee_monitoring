@@ -1,0 +1,32 @@
+video_input: "test_video.mp4"       # Path to the input video file
+
+stream_input_link: 'https://developer.apple.com/streaming/examples/'
+
+yolo_model_path: "yolov8m.pt" # Path to the human detection model
+
+face_emotion_model_path: 'face_landmarker.task'
+
+image_path: 'test_image.png'
+
+is_inside_bounding_box_color: [0, 128, 0]
+not_inside_bounding_box_color: [0, 255, 255]
+
+default_bounding_boxes:
+  - x: 49
+    y: 46
+    w: 115
+    h: 245
+    color: [255,0,0]
+  - x: 575
+    y: 35
+    w: 115
+    h: 245
+    color: [255,0,0]
+
+# Define the position and properties of the counter text
+counter_text:
+  position : [250, 50]  # (x, y)
+  font : 0
+  font_scale : 1
+  color : [255, 255, 255]  # White color in BGR
+  thickness : 2
